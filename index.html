@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pr-Br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https: //fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Decodificador</title>
+</head>
+<body>
+  <header>
+    <img class="logoAlura" src="/imagem/logoAlura.png" alt="Logo da Alura">
+  </header>
+
+  <main>
+    <div class="criptografia">
+        <textarea wrap="hard" id="input" placeholder="Digite seu texto." class="texto"></textarea>        
+        <p id="aviso">Apenas letras minúsculas e sem acento!!</p>  
+        <div class="btn-criptografia">
+          <button  id="codificador" class="btn">Codificar</button>
+          <button id="decodificador" class="btn">Decodificar</button>
+        </div>            
+    </div>
+
+    <div class="resultado">
+      <textarea wrap="hard" id="output" readonly placeholder=" " class="texto-resultado"></textarea>
+      <button id="copiar" class="btn">Copiar</button>
+      <button class="btn" id="limpar">Limpar campos</button>       
+    </div>        
+  </main>
+  <footer class="footer">
+    <p>@ Desenvolvido por Édno Ramiro - 2024 <img src="/imagem/sonic1.png" alt="Imagem Sonic" width="80" height="70"></p>   
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>

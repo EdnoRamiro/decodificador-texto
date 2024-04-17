@@ -1,0 +1,190 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #D2E3C8;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10vw 10vh 5vw;
+}
+
+.logo {
+  margin: 40px 0 0;
+}
+
+main {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.criptografia {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+  margin: 0 0 0 5vw;
+}
+
+.texto, .texto-resultado {
+  resize: none;
+  font-size: 25px;
+  color: rgba(1, 1, 8, 0.836);
+  padding: 10px;
+  border-radius: 45px;
+}
+
+.texto::placeholder {
+  color: #0A3871;
+}
+
+/* área de digitação*/
+.texto {
+  background: #E5E5E5;
+  border: 1px solid;
+  border-color: #22D4FD;
+  width: 80%;
+  height: 70vh;
+}
+
+#aviso {
+  display: flex;
+  font-size: 18px;
+  gap: 5px;
+  justify-content: flex-start;
+  color:#f70606;
+}
+
+.btn-criptografia {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 8vh;
+  gap: 5vw;
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 30px;
+  color:#0A3871;
+  font-weight: bold;
+  background: #D2E3C8;
+  border: 1px solid #0A3871;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  width: 200px;
+  height: 50px;
+  font-size: 23px;
+  padding: 5px;
+  border-radius: 20px;
+  color: #f70606;
+  font-weight: bold;
+  background: rgb(6, 101, 138);
+  border-color: #22D4FD;
+  cursor: pointer;
+}
+
+.resultado {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 35%;
+}
+
+.texto-resultado::placeholder {
+  height: 80vh;
+  background: url(/imagem/sonic.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: darkblue;
+  text-align: center;
+}
+
+.texto-resultado {
+  background: white;
+  border-color: #22D4FD;
+  width: 70%;
+  height: 90vh;
+  box-shadow: 0 24px 32px 8px rgba(31, 28, 75, 0.2);
+}
+
+#copiar {
+  position: relative;
+  bottom: 20vh;
+}
+
+footer {
+  margin: 40px 0;
+}
+
+footer p {
+  display: flex;
+  position: absolute;
+  bottom: auto;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80px;
+  color: #FFFFFF;
+  border: 2px solid #22D4FD;
+  background-color: #0A3871;
+  gap: 10px;
+}
+
+
+@media screen and (max-width: 950px) {
+  body {
+      width: auto;
+  }
+
+  main {
+      display: block;
+  }
+
+  .criptografia, .resultado {
+      width: 100%;
+      margin: 0;
+  }
+
+  #aviso {
+      align-items: center;
+      margin-left: 3vw;
+  }
+
+  .btn, .btn:hover {
+      width: 150px;
+  }
+
+  #limpar, #limpar:hover {
+      width: 190px;
+  }
+
+  .btn-criptografia {
+      margin-bottom: 5vh;
+  }
+  .texto, .texto-resultado {
+      width: 80%;
+      height: 60vh;
+  }
+  .texto-resultado::placeholder {
+      height: 50vh;
+      font-size: 20px;
+      }
+
+  #copiar {
+      bottom: 10vh;
+  }
+}
